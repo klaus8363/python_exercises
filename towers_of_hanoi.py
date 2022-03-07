@@ -1,4 +1,6 @@
+# Recursive solution for Towers on Hanoi problem
 
+'''
 def thp(n, S, T, I):
     if n == 1:
        T.append(S.pop())
@@ -7,6 +9,7 @@ def thp(n, S, T, I):
         thp(n - 1, S, I, T)
         T.append(S.pop())
         thp(n - 1, I, T, S)
+'''
 
 def thp_str(n, S, T, I):
     if n == 1:
@@ -16,7 +19,6 @@ def thp_str(n, S, T, I):
         print("Move disk from peg {} to peg {}".format(S, T))
         thp_str(n - 1, I, T, S)
     return 0
-    
 
 def solve(n):
     S = [0] * n
@@ -32,6 +34,4 @@ def solve(n):
     thp_str(n, S, T, I)
 
 
-print(solve(2))
-    
-
+print(solve(5))

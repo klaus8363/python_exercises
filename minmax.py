@@ -1,5 +1,6 @@
 import random
 
+
 def min_(array):
     if len(array) == 0:
         return None
@@ -25,12 +26,15 @@ def max_(array):
             max1 = maxval
         return max1
 
+
 def minmax(array):
     return min_(array), max_(array)
+
 
 print(min_([1,2,3,4,5,-9,99,89]))
 print(max_([1,2,3,4,5,-9,99,89]))
 print(minmax([1,2,3,4,5,-9,99,89, 365, 4265]))
+
 
 values = []
 for i in range(50):

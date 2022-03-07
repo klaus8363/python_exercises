@@ -1,3 +1,5 @@
+# Python implementation of x^y using recursion
+
 def power(x, y):
     if x == 0:
         if y == 0:
@@ -10,7 +12,8 @@ def power(x, y):
         elif y == 1:
             return x
         else:
-            return x * power(x, y-1)
+            return x * power(x, y - 1)
+
 
 print(power(0, 0))
 print(power(0, 1))

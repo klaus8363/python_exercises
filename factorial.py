@@ -1,3 +1,5 @@
+# Factorial recursive implementation in Python
+
 def factorial(n):
     print("factorial ", n)
     if n < 0:
@@ -9,4 +11,3 @@ def factorial(n):
 
 
 print(factorial(3))
-
