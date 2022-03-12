@@ -20,6 +20,7 @@ def insertion_sort(array):
     return array
 
 
-array = [3, 5, 1, 8, -9, 81, 72, -75, 45, 89, 654]
+#array = [3, 5, 1, 8, -9, 81, 72, -75, 45, 89, 654]
+array = [6, 2, 4, 9, 3, 7]
 
 print(insertion_sort(array))
